@@ -20,7 +20,7 @@
       <ul class="navbar-nav">
         
         <?php 
-          if($type === 'user') {
+          if($type === 'user') { //SI EN CASO ESTEN EN MODO USUARIO SE OMSTRARÁN LAS SIGUIENTES OPCIONES PARA NAVEGAR EN LAS PÁGINAS
         ?>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="../views/relaciones.php">Relaciones</a>
