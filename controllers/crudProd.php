@@ -1,5 +1,5 @@
 <?php
-
+//Solo se podrá exportar o importar productos 
  ///////////////////CONSULTA DE AMBAS TABLAS///////////////////////
 $queryExportar= $conn->query("SELECT * FROM exportados order by id_exportado");
 $queryImportar=$conn->query("SELECT * FROM importados order by id_importado");
