@@ -17,6 +17,9 @@ if(isset($_POST['save'])){
     $name = $conn->real_escape_string($_POST['name']);
     $email = $conn->real_escape_string($_POST['email']);
     $password = $conn->real_escape_string($_POST['password']);
+  
+    //GUARDAMOS EL PASSWORD EN LA Base de datos,  PERO ANTES LO ENCRIPTAMOS CON LO SIGUIENTE, PARA QUE YA NO SEA HACKEABLE :v
+  
     $hashPass = password_hash($password, PASSWORD_DEFAULT);
     $SQL = $conn->query("INSERT INTO users(type, name, email, password) VALUES ('$type','$name','$email', '$hashPass')");
 
